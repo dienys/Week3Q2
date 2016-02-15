@@ -1060,3 +1060,16 @@ AbstractController::ActionNotFound (The action 'user' could not be found for Use
 
 
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (7.7ms)
+
+
+Started GET "/" for 83.141.77.130 at 2016-02-15 20:44:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 669ms (Views: 652.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 83.141.77.130 at 2016-02-15 20:44:35 +0000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 83.141.77.130 at 2016-02-15 20:44:35 +0000
