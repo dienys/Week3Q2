@@ -807,3 +807,42 @@ Processing by BlogsController#show as HTML
   [1m[36mBlog Load (0.4ms)[0m  [1mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = ? LIMIT 1[0m  [["id", 9]]
   Rendered blogs/show.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 106ms (Views: 80.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 83.141.77.130 at 2016-02-15 20:30:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/railties-4.2.2/lib/rails/templates/rails/welcome/index.html.erb (4.8ms)
+Completed 200 OK in 45ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 83.141.77.130 at 2016-02-15 20:30:46 +0000
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.2ms)[0m  SELECT "blogs".* FROM "blogs"
+  Rendered blogs/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 299ms (Views: 281.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 83.141.77.130 at 2016-02-15 20:30:47 +0000
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
+  Rendered blogs/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 76ms (Views: 74.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/new" for 83.141.77.130 at 2016-02-15 20:30:48 +0000
+Processing by BlogsController#new as HTML
+  Rendered blogs/_form.html.erb (55.1ms)
+  Rendered blogs/new.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 115ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/blogs" for 83.141.77.130 at 2016-02-15 20:30:58 +0000
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MoJ+pg/EdNUbd5cJVBzVG1cPdlWhRFWaCPyAHnK00HmjYVeWmyKhTiydZLMd+s61XPvomRmCLrholQW+6q1IlQ==", "blog"=>{"content"=>"xqsxx", "user_id"=>"1"}, "commit"=>"Create Blog"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered blogs/_form.html.erb (9.8ms)
+  Rendered blogs/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 94ms (Views: 90.0ms | ActiveRecord: 0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
