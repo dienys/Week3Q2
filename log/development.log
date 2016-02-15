@@ -995,3 +995,6 @@ Processing by BlogsController#index as HTML
   [1m[36mBlog Load (0.2ms)[0m  [1mSELECT "blogs".* FROM "blogs"[0m
   Rendered blogs/index.html.erb within layouts/application (5.8ms)
 Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mBlog Load (0.3ms)[0m  [1mSELECT "blogs".* FROM "blogs" WHERE "blogs"."user_id" = ?[0m  [["user_id", 1]]
